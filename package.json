@@ -1,0 +1,16 @@
+{
+  "name": "slack-bot-chadwick",
+  "version": "1.0.0",
+  "description": "The Volkmann family finally gets a butler",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "author": "Landon Volkmann",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^0.19.0",
+    "slackbots": "^1.2.0"
+  },
+  "devDependencies": {}
+}

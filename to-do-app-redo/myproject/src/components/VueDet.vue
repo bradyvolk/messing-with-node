@@ -74,6 +74,7 @@ export default {
   name: "VueDet",
   data() {
     return {
+      isVisible: false,
       firstname: "Brady",
       lastname: "Volkmann",
       htmlcontent: "<div><h3>droppin in html content with vue</h3></div>",
@@ -144,20 +145,6 @@ h1 {
 h2 {
   font-weight: normal;
 }
-ul {
-  list-style-type: none;
-  padding: 0;
-}
-li {
-  display: inline-block;
-  margin: 0 10px;
-}
-a {
-  color: #42b983;
-}
-.demo {
-  padding-top: 100px;
-}
 .active {
   color: #4f8a10;
   background-color: #dff2bf;
@@ -169,5 +156,11 @@ a {
 .info {
   color: #00529b;
   background-color: #bde5f8;
+}
+.visible {
+  visibility: visible;
+}
+.invisible {
+  visibility: hidden;
 }
 </style>

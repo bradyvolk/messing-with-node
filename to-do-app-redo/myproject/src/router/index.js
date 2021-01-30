@@ -5,7 +5,23 @@ import VueDet from '@/components/VueDet'
 
 Vue.use(Router)
 
-export default new Router({
+// export default new Router({
+//   routes: [
+//     {
+//       path: '/',
+//       name: 'Home',
+//       component: Home
+//     },
+//     {
+//       path: '/demos',
+//       name: 'demos',
+//       component: VueDet
+//     }
+//   ]
+// })
+
+let router = new Router({
+  mode: 'history',
   routes: [
     {
       path: '/',
@@ -15,7 +31,9 @@ export default new Router({
     {
       path: '/demos',
       name: 'demos',
-      component: VueDet
-    }
+      component: VueDet,
+    },
   ]
 })
+
+export default router

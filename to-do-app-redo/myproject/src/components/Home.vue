@@ -3,13 +3,8 @@
     <h1>{{ msg }}</h1>
     <div>
       <div class="btn-box">
-        <a href="http://localhost:8080/#/demos" class="btn-block"
-          ><span class="btn-text">Go to Demos!</span></a
-        >
-      </div>
-      <div class="btn-box">
         <a class="btn-block" v-on:mouseup="changeDemosVisibility()">
-          <span class="btn-text">Or bring them here!</span></a
+          <span class="btn-text">Click me to reveal some demos!</span></a
         >
       </div>
     </div>
@@ -25,7 +20,7 @@ export default {
   name: "Home",
   data() {
     return {
-      msg: "Home",
+      msg: "I'm trying to learn Vue here!",
       showDemos: false,
     };
   },
@@ -41,6 +36,7 @@ export default {
 <style scoped>
 h1 {
   font-weight: 10px;
+  padding: 200px;
 }
 .btn-box {
   padding: 30px;

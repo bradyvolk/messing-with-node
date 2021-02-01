@@ -5,21 +5,6 @@ import VueDet from '@/components/VueDet'
 
 Vue.use(Router)
 
-// export default new Router({
-//   routes: [
-//     {
-//       path: '/',
-//       name: 'Home',
-//       component: Home
-//     },
-//     {
-//       path: '/demos',
-//       name: 'demos',
-//       component: VueDet
-//     }
-//   ]
-// })
-
 let router = new Router({
   mode: 'history',
   routes: [

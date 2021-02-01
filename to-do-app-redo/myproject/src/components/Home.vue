@@ -4,7 +4,7 @@
     <div>
       <div class="btn-box">
         <a class="btn-block" v-on:mouseup="changeDemosVisibility()">
-          <span class="btn-text">Click me to reveal some demos!</span></a
+          <span class="btn-text">{{ demoVisibilityMessage }}</span></a
         >
       </div>
     </div>
@@ -22,11 +22,15 @@ export default {
     return {
       msg: "I'm trying to learn Vue here!",
       showDemos: false,
+      demoVisibilityMessage: "Click to reveal demos!",
     };
   },
   methods: {
     changeDemosVisibility: function () {
       this.showDemos = !this.showDemos;
+      this.demoVisibilityMessage = this.showDemos
+        ? "Click to hide demos!"
+        : "Click to reveal demos!";
     },
   },
 };
@@ -35,8 +39,8 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 h1 {
-  font-weight: 10px;
-  padding: 200px;
+  font-weight: 20px;
+  padding: 150px;
 }
 .btn-box {
   padding: 30px;
@@ -47,6 +51,9 @@ h1 {
   border-radius: 20px;
   border: 2px solid #363636;
   text-decoration: none;
+  width: 400px;
+  margin: 0 auto;
+  text-align: center;
 }
 .btn-text {
   color: #363636;

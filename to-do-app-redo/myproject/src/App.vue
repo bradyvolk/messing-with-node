@@ -6,10 +6,13 @@
         <b-navbar-brand to="/"
           ><img src="./assets/b-logo.png" style="height: 50px"
         /></b-navbar-brand>
-        <b-collapse is-nav id="nav_collapse">
+        <b-collapse is-nav id="nav_collapse"
+          >posts-manager
           <b-navbar-nav>
             <b-nav-item to="/">Home</b-nav-item>
+            <b-nav-item to="/blog">Blogs</b-nav-item>
             <b-nav-item to="/demos">Demos</b-nav-item>
+            <b-nav-item to="/posts-manager">Post Manager</b-nav-item>
           </b-navbar-nav>
         </b-collapse>
       </b-navbar>
@@ -51,6 +54,9 @@ export default {
 </script>
 
 <style>
+@import "https://www.w3schools.com/w3css/4/w3.css";
+@import "https://fonts.googleapis.com/css?family=Raleway";
+@import "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css";
 #app {
   font-family: "Avenir", Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;

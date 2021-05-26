@@ -38,7 +38,7 @@ let userResource = finale.resource({
 database
     .sync({ force: true })
     .then(() => {
-        app.listen(8081, () => {
+        app.listen(8080, () => {
             console.log('listening to port localhost:8081')
         })
     })

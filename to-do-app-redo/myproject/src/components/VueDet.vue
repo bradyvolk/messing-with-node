@@ -55,6 +55,8 @@
     </div>
     <div class="demo">
       <div
+        v-on:mouseover="flipactive()"
+        v-on:click="fliperror()"
         v-bind:class="[isActive ? infoclass : '', hasError ? errorclass : '']"
       >
         <b>{{ title_class }}</b>
@@ -109,6 +111,12 @@ export default {
     },
     getrandomno1: function () {
       return Math.random();
+    },
+    flipactive: function () {
+      this.isActive = !this.isActive;
+    },
+    fliperror: function () {
+      this.hasError = !this.hasError;
     },
   },
   computed: {
